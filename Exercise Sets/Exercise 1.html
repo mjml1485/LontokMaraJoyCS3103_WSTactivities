@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 20px;
+            padding: 0;
+        }
+
+        h1 {
+            color: #5a5a5a;
+            text-align: center;
+        }
+
+        ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        ol[type="A"] > li {
+            margin-top: 15px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto 15px auto;
+            border-radius: 50%;
+        }
+
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            margin-top: 15px;
+        }
+
+        label {
+            margin-left: 5px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin: 10px 5px;
+        }
+
+        /* Animation for heart */
+        .heartbeat {
+            display: inline-block;
+            animation: heartbeat 1s infinite;
+            color: red;
+        }
+
+        @keyframes heartbeat {
+            0%, 20%, 40%, 60%, 80%, 100% {
+                transform: scale(1);
+            }
+            10%, 30%, 50%, 70%, 90% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>DYK Who am I?</h1>
+    <ol type="I">
+        <li>Things about ME</li>
+        <ol type="A">
+            <img src="meee.jpg" width="150" height="150">
+            <li>Personal Information</li>
+            <ul type="none">
+                <li>Mara Joy Lontok</li>
+                <li>21 years old</li>
+                <li>BS Computer Science</li>
+                <li>CS 3103</li>
+                <li>Batangas State University</li>
+                <li><a href="https://www.facebook.com/Maraimnidaa/">This is my facebook account link</a></li>
+            </ul>
+            
+            <li>Hobbies</li>
+            <ul type="disc">
+                <li>Sleeping</li>
+                <li>Listening and singing Korean, Chinese, and worship songs</li>
+                <li>Watching Chinese and Korean Dramas</li>
+                <li>Streaming Shopee Live, joining hammer games, and earning coins</li>
+            </ul>
+
+            <li>Can I ask for yours too?</li>
+            <form>
+                <input type="radio" id="yes" name="answer" value="YES">
+                <label for="yes">YES</label><br>
+                <input type="radio" id="no" name="answer" value="NO">
+                <label for="no">NO</label><br>
+            </form>
+
+            <p>If YES, what are your hobbies?</p>
+            <form>
+                <input type="checkbox" id="photography" name="hobbies" value="Photography">
+                <label for="photography"> Photography</label><br>
+                <input type="checkbox" id="painting" name="hobbies" value="Painting">
+                <label for="painting"> Painting</label><br>
+                <input type="checkbox" id="reading" name="hobbies" value="Reading">
+                <label for="reading"> Reading</label><br>
+                <input type="checkbox" id="singing" name="hobbies" value="Singing">
+                <label for="singing"> Singing</label><br>
+                <input type="checkbox" id="cooking" name="hobbies" value="Cooking">
+                <label for="cooking"> Cooking</label><br>
+                <input type="checkbox" id="dancing" name="hobbies" value="Dancing">
+                <label for="dancing"> Dancing</label><br>
+                <input type="checkbox" id="learning" name="hobbies" value="Learning new language">
+                <label for="learning"> Learning new language</label><br>
+                <input type="checkbox" id="boardgames" name="hobbies" value="Playing board games">
+                <label for="boardgames"> Playing board games</label><br>
+                <input type="checkbox" id="gardening" name="hobbies" value="Gardening">
+                <label for="gardening"> Gardening</label><br>
+                <input type="checkbox" id="knitting" name="hobbies" value="Knitting/Crocheting">
+                <label for="knitting"> Knitting/Crocheting</label><br>
+            </form>
+        </ol>
+    </ol>
+
+    <ol type="II">
+        <li>Random Facts!</li>
+    </ol>
+    <p>This is my <span style="color: #8DB600;">favorite color</span></p>
+    <p>My <span class="heartbeat">heart</span> beats faster when I'm afraid</p>
+</body>
+
+</html>
