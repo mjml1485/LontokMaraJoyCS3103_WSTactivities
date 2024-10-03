@@ -1,0 +1,75 @@
+body {
+    
+    background-color: #6CBEC7;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #050505; /* Bright pink color */
+    font-size: 2.5rem; /* Adjust the size as needed */
+    margin-top: 1in; /* Adds space above the heading */
+}
+
+h2 {
+    font-family: Pacifico, cursive ;
+    color:#FFF5E1;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5px; /* 0.5 inch from the <h1> */
+}
+
+.vision-board {
+    max-width: 1025px; /* Set a max width */
+    margin: 50px auto; /* Adjust the margin to move the vision board */
+    background-color: #825B32; /* Brown color */
+    padding: 50px; /* Adjust this value to change the height of the brown background */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.images-grid {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    
+    gap: 20px; /* Gap between items */
+    margin-top: 20px; /* Keep the margin above the images grid */
+}
+
+.image-card {
+    position: relative ;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; 
+    height: 300px; 
+}
+
+.image-card img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+    
+}
+
+.image-card p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
