@@ -1,0 +1,152 @@
+/* General body and layout */
+body {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Soft gradient of blue tones */
+    color: #333; /* Dark text for better contrast */
+    overflow: hidden;
+}
+
+/* Container for the cards */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; /* Reduced gap for a tighter layout */
+    animation: fadeIn 2s ease-in-out;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Individual card styling */
+.card {
+    background-color: #ffffff;
+    padding: 20px; /* Reduced padding */
+    border-radius: 12px; /* Slightly smaller border radius */
+    text-align: center;
+    font-size: 16px; /* Slightly smaller text */
+    font-weight: 500;
+    width: 240px; /* Reduced width */
+    height: auto;
+    min-height: 280px; /* Reduced height */
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #fff; /* Light background */
+    border: 2px solid #2193b0; /* Blue border for contrast */
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-8px); /* Reduced hover effect */
+    background-color: #f1f1f1; /* Subtle gray background on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border-color: #ff6f61; /* Warm coral on hover */
+}
+
+/* Icon styling */
+i {
+    font-size: 32px; /* Slightly smaller icon size */
+    color: #2193b0; /* Initial blue color for icons */
+    margin-bottom: 12px; /* Adjusted margin */
+    transition: color 0.3s ease;
+}
+
+.card:hover i {
+    color: #ff6f61; /* Change to coral color on hover */
+}
+
+/* Title styling */
+h3 {
+    font-size: 20px; /* Slightly smaller title size */
+    font-weight: 700;
+    color: #2193b0; /* Blue color for titles */
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333; /* Ensure titles have dark color for contrast */
+}
+
+/* Paragraph styling */
+p {
+    font-size: 13px; /* Slightly smaller font size */
+    line-height: 1.6;
+    margin-bottom: 8px; /* Reduced margin */
+    color: #333; /* Dark color for readability */
+}
+
+/* Link styling */
+a {
+    color: #2193b0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff6f61;
+    text-decoration: underline;
+}
+
+/* Animation for fading in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 85%; /* Adjust width for smaller screens */
+        max-width: 300px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background: linear-gradient(135deg, #ff9a8b, #ff6f61); /* Update to warm gradient for smaller screens */
+    }
+
+    .container {
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 15px; /* Reduced padding for mobile */
+        min-height: 250px; /* Reduced minimum height */
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 11px;
+    }
+}
